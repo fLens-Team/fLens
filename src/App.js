@@ -28,6 +28,7 @@ function App() {
 
   return (
     <div className="App" >
+      a
       {/* ケースA: デバイス毎に表示を切り替える */}
       {
         /*
