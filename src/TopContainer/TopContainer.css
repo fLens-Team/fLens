@@ -1,0 +1,31 @@
+.TopContainer{
+  width: 100vw;
+  height: 11.375vh;
+
+  /* 空白 */
+  padding-top: 3.75vh;
+  padding-left: 2.083333333vw;
+  padding-right: 2.083333333vw;
+
+  background-color: rgb(40, 40, 40);
+
+  /* 開発用 */
+  /* background-color : black; */
+}
+
+/* ************* */
+/*   flensロゴ   */
+/* ************* */.TopContainer > img.fLensLogo{
+  height: 4.93625vh;
+}
+
+/* ************************** */
+/* media art project のタイポ */
+/* ************************** */
+.TopContainer > img.mediaArtTypo{
+  height: 1.75vh;
+  right: 2.083333333vw;
+  position: absolute;
+}
+
+

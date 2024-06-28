@@ -1,6 +1,7 @@
 .CaptureContainer{
   width: 100vw;
-  height: 70vh;
+  /* height: 70vh; */
+  height: 20vh;
 
   /* 中央に寄せる */
   display: flex;
@@ -20,23 +21,6 @@
   /* 余白を含めた各要素の横幅 */
   --CaptureContainerLeft_Width_WithPadding: 8.680555556vw;
   --CaptureContainerRight_Width_WithPadding: 10vw;
-}
-
-/* ************* */
-/*    画面左上    */
-/* ************* */
-.CaptureContainer > div.CaptureContainerLeft{
-  /* 左と上の余白 */
-  padding-left: var(--CaptureContainerSide_PaddingSide);
-  padding-top: var(--CaptureContainerSide_PaddingTop);
-
-  /* 横幅 */
-  width: var(--CaptureContainerSide_Width);
-}
-
-/* fLensのタイポとロゴの画像 */
-.CaptureContainer > div.CaptureContainerLeft > img{
-  width: 6.6vw;
 }
 
 /* ************* */
@@ -144,28 +128,4 @@
   grid-column: 3;
 
   width: var(--CaptureContainerCenter_BttomSides_Width);
-}
-
-/* ************* */
-/*    画面右上   */
-/* ************* */
-.CaptureContainer > div.CaptureContainerRight{
-  width: var(--CaptureContainerSide_Width_WithPadding);
-
-  /* 上と右の余白 */
-  /* padding-top: 3.8vh;
-  padding-right: 2.1vw; */
-  padding-right: var(--CaptureContainerSide_PaddingSide);
-  padding-top: var(--CaptureContainerSide_PaddingTop);
-
-  /* 子要素の配置 */
-  display: inline-block;
-  text-align: right;
-  text-align: right;
-}
-
-/* media art projectのタイポ */
-.CaptureContainer > div.CaptureContainerRight > img{
-  width: 7.92vw;
-  height: 1.75vh;
 }

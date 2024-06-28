@@ -1,3 +1,4 @@
+import TopContainer from "./TopContainer/TopContainer";
 import CaptureContainer from "./CaptureContainer/CaptureContainer"
 import FilterSelectContainer from "./FilterSelectContainer/FilterSelectContainer"
 
@@ -47,6 +48,7 @@ function App() {
 
       {/* ケースB: とにかく表示したい場合 */}
       {/* アプリ上部 */}
+      < TopContainer />
       < CaptureContainer shaderIndex={shaderIndex} />
       {/* アプリ下部 */}
       <FilterSelectContainer shaderIndex={shaderIndex} setShaderIndex={setShaderIndex} />
