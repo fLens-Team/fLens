@@ -1,14 +1,20 @@
 
 .FilterSelectContainer{
-  width: 100vw;
-  height: 30vh;
+  /* width: calc(100vw - 68.75vw); */
+  width: calc(100vw - 70vw);
+  /* 画面の高さとTopCantainerコンポーネントの差 */
+  height: calc(100vh - 11.375vh);
 
   /* 中央に寄せる */
-  display: flex;
-  justify-content: center;
-  background-color: rgb(40, 40, 40);
+  /* display: flex;
+  justify-content: center; */
+  /* background-color: rgb(40, 40, 40); */
+  background-color: rgb(255, 0, 0);
 
-  position: relative;
+  /* position: relative; */
+
+  /* 右寄せの配置 */
+  float: right;
 }
 
 /* 左右の矢印ボタン */

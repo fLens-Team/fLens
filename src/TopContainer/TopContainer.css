@@ -1,11 +1,14 @@
 .TopContainer{
-  width: 100vw;
-  height: 11.375vh;
+  --padding-top-rate: 3.75vh;
+  --padding-side-rate: 2.083333333vw;
+
+  /* width: 100vw; */
+  height: calc(11.375vh - var(--padding-top-rate));
 
   /* 空白 */
-  padding-top: 3.75vh;
-  padding-left: 2.083333333vw;
-  padding-right: 2.083333333vw;
+  padding-top: var(--padding-top-rate);
+  padding-left: var(--padding-side-rate);
+  padding-right: var(--padding-side-rate);
 
   background-color: rgb(40, 40, 40);
 

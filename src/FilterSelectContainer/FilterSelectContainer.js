@@ -8,8 +8,8 @@ import "./FilterSelectContainer.css";
 import { fileList } from "../CaptureContainer/CameraCapture/fileList";
 
 // 画像に関するパス
-import LeftButton from "../image/LeftButton.svg";
-import RightButton from "../image/RightButton.svg";
+// import LeftButton from "../image/LeftButton.svg";
+// import RightButton from "../image/RightButton.svg";
 import FocusFilter from "../image/FocusFilter.svg";
 
 export default function FilterSelectContainer({ shaderIndex, setShaderIndex }) {
@@ -25,13 +25,13 @@ export default function FilterSelectContainer({ shaderIndex, setShaderIndex }) {
 
   return (
     <div className="FilterSelectContainer">
-      <img src={LeftButton} onClick={backShader} className="btn"></img>
+      {/* <img src={LeftButton} onClick={backShader} className="btn"></img> */}
 
-      <img src={FocusFilter} className="focus"></img>
-      <img src={fileList[shaderIndex]["prev"]} className="preview"></img>
+      {/* <img src={FocusFilter} className="focus"></img> */}
+      {/* <img src={fileList[shaderIndex]["prev"]} className="preview"></img> */}
       {/* <img src={fileList[shaderIndex]["prev"]} className="preview" style={{ objectFit: 'contain', maxWidth: '100%', maxHeight: '100%' }}></img> */}
 
-      <img src={RightButton} onClick={nextShader} className="btn"></img>
+      {/* <img src={RightButton} onClick={nextShader} className="btn"></img> */}
     </div>
   );
 }

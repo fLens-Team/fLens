@@ -1,11 +1,13 @@
 .CaptureContainer{
-  width: 100vw;
-  /* height: 70vh; */
-  height: 20vh;
+  width: 68.75vw;
+  /* 画面の高さとTopCantainerコンポーネントの差 */
+  height: calc(100vh - 11.375vh);
 
-  /* 中央に寄せる */
-  display: flex;
-  background-color: rgb(40, 40, 40);
+  /* 左寄せの配置 */
+  /* display: flex; */
+  float: left;
+  /* background-color: rgb(40, 40, 40); */
+  background-color: black;
 
   /* ***************** */
   /*     変数の定義     */
@@ -21,23 +23,28 @@
   /* 余白を含めた各要素の横幅 */
   --CaptureContainerLeft_Width_WithPadding: 8.680555556vw;
   --CaptureContainerRight_Width_WithPadding: 10vw;
+
+    /* キャプチャのフレーム画像の横幅 */
+  /* --CaptureFrameWidth: 55.55555556vw; */
+  --CaptureFrameWidth: 62.083333333vw;
 }
 
 /* ************* */
 /*   画面上中央   */
 /* ************* */
-.CaptureContainer > div.CaptureContainerCenter {
+/* .CaptureContainer > div.CaptureContainerCenter { */
   /* 内部に余白を作る */
-  margin-top: 8.625vh;
+  /* margin-top: 8.625vh;
   margin-top: var(--CaptureContainerSide_PaddingTop);
   margin-left: 13.47222222vw;
-  margin-right: 12.08333333vw;
+  margin-right: 12.08333333vw; */
 
   /* キャプチャのフレーム画像の横幅 */
-  --CaptureFrameWidth: 55.55555556vw;
+  /* --CaptureFrameWidth: 55.55555556vw; */
+  
   /* フレーム下部にある領域の高さ */
-  --CaptureFrameBottom_Height: 7vh;
-}
+  /* --CaptureFrameBottom_Height: 7vh;
+} */
 
 /* キャプチャとそのフレーム画像 */
 .CaptureContainer > div.CaptureContainerCenter > div.CaptureContainerCenter-top{
@@ -49,30 +56,45 @@
 
   /* 子要素を中央に寄せるため相対的な基準点とする */
   position: relative;
+
+  text-align: left;
+  display: block;
 }
 
 /* フレーム画像 */
-.CaptureContainer > div.CaptureContainerCenter > div.CaptureContainerCenter-top > img{
+.CaptureContainer > img{
   /* 縦横に柔軟性あり */
   width: var(--CaptureFrameWidth);
-  height: 58.875vh;
-
+  /* height: 58.875vh; */
+  height: 78.875vh;
+  
   /* 中央に寄せる */
-  top: 0;
+  /* top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  margin: auto;
+  margin: auto; */
+  /* 右上に寄せる */
+  /* right: 0; */
+  /* margin: 0 0 0 auto; */
+  /* float: right; */
+  /* display:block; */
+  /* margin-left: auto;
+  display: block; */
+
+  /* FilterSelectContainerとの横並びに必要 */
+  /* position: absolute; */
 }
 
 /* キャプチャを収めるコンポーネント */
-.CaptureContainer > div.CaptureContainerCenter > div.CaptureContainerCenter-top > div.CameraCapture{
+/* .CaptureContainer > div.CaptureContainerCenter > div.CaptureContainerCenter-top > div.CameraCapture{ */
+.CaptureContainer > div.CameraCapture{
   /* 子要素を中央に寄せる */
-  display: flex;
+  /* display: flex; */
 }
 
 /* キャプチャ（p5.js のキャンバス） */
-.CaptureContainer > div.CaptureContainerCenter > div.CaptureContainerCenter-top > div.CameraCapture > canvas{
+.CaptureContainer > div.CameraCapture > canvas{
   /* 中央に寄せる */
   position: absolute;
   top: 0;
