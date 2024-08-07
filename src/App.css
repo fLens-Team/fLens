@@ -5,4 +5,17 @@ html *{
 
   /* キャプチャ画像が見えなくなるのでページ全体で色をつける設定は厳禁 */
   /* background-color: rgb(75, 75, 75); */
+  background-color: rgb(40, 40, 40);
+
+  /* overflow: hidden; */
 }
+
+/* .App{
+  --padding-top-rate: 3.75vh;
+  --padding-side-rate: 2.083333333vw;
+
+  margin-top: var(--padding-top-rate);
+  margin-bottom: var(--padding-top-rate);
+  margin-left: var(--padding-side-rate);
+  margin-right: var(--padding-side-rate);
+} */

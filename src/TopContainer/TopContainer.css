@@ -1,0 +1,34 @@
+.TopContainer{
+  --padding-top-rate: 3.75vh;
+  --padding-side-rate: 2.083333333vw;
+
+  /* width: 100vw; */
+  height: calc(11.375vh - var(--padding-top-rate));
+
+  /* 空白 */
+  padding-top: var(--padding-top-rate);
+  padding-left: var(--padding-side-rate);
+  padding-right: var(--padding-side-rate);
+
+  /* background-color: rgb(40, 40, 40); */
+
+  /* 開発用 */
+  /* background-color : black; */
+}
+
+/* ************* */
+/*   flensロゴ   */
+/* ************* */.TopContainer > img.fLensLogo{
+  height: 4.93625vh;
+}
+
+/* ************************** */
+/* media art project のタイポ */
+/* ************************** */
+.TopContainer > img.mediaArtTypo{
+  height: 1.75vh;
+  right: 2.083333333vw;
+  position: absolute;
+}
+
+

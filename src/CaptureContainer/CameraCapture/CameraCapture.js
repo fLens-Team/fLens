@@ -26,8 +26,11 @@ const CameraCapture = ({ shaderIndex }) => {
     // ページに対するキャンバスの最大サイズ率
     const canvasScale = 0.90;
     // 画面に対するフレームのサイズ比率(CaptureContainer.css を参照)
-    const CaptureFrameWidth = 0.5555555556 * canvasScale;
-    const CaptureFrameHeight = 0.58875 * canvasScale;
+    // const CaptureFrameWidth = 0.5555555556 * canvasScale;
+    const CaptureFrameWidth = 0.59583333333 * canvasScale;
+    // const CaptureFrameHeight = 0.58875 * canvasScale;
+    const CaptureFrameHeight = 0.78875 * canvasScale;
+
 
     // 選択中のフィルタを実装するShaderファイルのみ読み込む
     p.preload = () => {
@@ -46,6 +49,7 @@ const CameraCapture = ({ shaderIndex }) => {
 
       // キャプチャの開始とキャンバスサイズの調整を同期的に処理する
       // capture = p.createCapture(p.VIDEO, { flipped: true }, calculateLayout);
+      // capture = p.createCapture(p.VIDEO, calculateLayout);
       capture = p.createCapture(p.VIDEO, calculateLayout);
 
       capture.hide();
@@ -117,6 +121,8 @@ const CameraCapture = ({ shaderIndex }) => {
       }
 
       p.resizeCanvas(newWidth, newHeight, p.WEBGL);
+      // p.createCanvas(window.innerWidth, window.innerHeight, p.WEBGL);
+
 
     }
   };
