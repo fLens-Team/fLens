@@ -4,5 +4,5 @@ html *{
   padding: 0;
 
   /* キャプチャ画像が見えなくなるのでページ全体で色をつける設定は厳禁 */
-  /* background-color: rgb(75, 75, 75); */
+  background-color: rgb(75, 75, 75);
 }
