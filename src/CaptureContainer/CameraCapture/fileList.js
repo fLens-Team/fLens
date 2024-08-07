@@ -29,7 +29,8 @@ import F_BlackHole from "./assets/frag/BlackHole.frag"    //
 /* ------------------- */
 /*    プレビュー画像    */
 /* ------------------- */
-import P_normal from "./assets/prev/Normal.png"           // 未加工のキャプチャ
+// import P_normal from "./assets/prev/Normal.png"           // 未加工のキャプチャ
+import P_normal from "./assets/prev/Normal.svg"           // 未加工のキャプチャ
 import P_GREENAILEN from "./assets/prev/GreenAlien.png"   // グリーンエイリアン
 import P_BlueStairs from "./assets/prev/BlueStairs.png"    // 
 import P_VortexTexture from "./assets/prev/VortexTexture.png"    // 
@@ -67,6 +68,15 @@ export const fileList = [
   //   prev: P_NEGATIVE,
   //   developer: "s"
   // },
+
+  /* 未加工のキャプチャ */
+  {
+    name: "Normal",
+    vert: V_main,
+    frag: F_normal,
+    prev: P_normal,
+    developer: "s"
+  },
 
   /* グリーンエイリアン */
   {
@@ -129,14 +139,5 @@ export const fileList = [
     frag: F_BlackHole,
     prev: P_BlackHole,
     developer: "d"
-  },
-
-  /* 未加工のキャプチャ */
-  {
-    name: "Normal",
-    vert: V_main,
-    frag: F_normal,
-    prev: P_normal,
-    developer: "s"
   },
 ];
