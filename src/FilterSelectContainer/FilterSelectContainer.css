@@ -1,5 +1,7 @@
-
 .FilterSelectContainer{
+    /* 右寄せの配置 */
+    float: right;
+    
   /* width: calc(100vw - 68.75vw); */
   width: calc(100vw - 70vw);
   /* 画面の高さとTopCantainerコンポーネントの差 */
@@ -13,8 +15,7 @@
 
   /* position: relative; */
 
-  /* 右寄せの配置 */
-  float: right;
+
 }
 
 /* 左右の矢印ボタン */
